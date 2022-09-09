@@ -1,95 +1,41 @@
-* {
-   font-family: 'Poppins', sans-serif;
+body {
+   margin: 0px;
 }
 
-.flex-container {
-   margin-top: 150px;
-   display: flex;
-   justify-content: center;
+body>.container {
+   width: 700px;
+   height: 700px;
 }
 
-hr{
-   width: 80px;
-   color: rgb(92, 80, 80);
+.container>.box {
+   width: 100px;
+   height: 100px;
+   animation: box-animate 4s infinite;
 }
 
-.container > .card {
-   margin-left: 40px;
-   width: 300px;
-   height: 500px;
-   border: 1px;
-   border-radius: 10px;
-   box-shadow: 0px 0px 27px -3px rgb(102, 89, 102);
-}
+@keyframes box-animate {
+   0% {
+      transform: translateY(0px);
+      background-color: red;
+   }
 
-.top-card {
-   background-color: rgba(48, 20, 233, 0.76);
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-   height: 150px;
+   25% {
+      transform: translateY(600px);
+      background-color: blue;
+   }
 
-}
+   50% {
+      transform: translate(600px, 600px);
+      background-color: green;
+   }
 
-.bottom-card {
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
-   height: 320px;
-}
+   75% {
+      transform: translate(600px);
+      background-color: yellow;
+   }
 
-.top-card > .price {
-   max-height: 150px;
-   position: relative;
-   display: flex;
-   justify-content: center;
-   color: white;
-}
-
-.price,
-.date,
-.wrapper-btn {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.date{
-   display: flex;
-   flex-direction: column;
-   margin-left: 25px;
-   color: grey;
-   max-width: 250px;
-   font-size: 18px;
-   font-weight: 300;
-}
-
-.price,  
-.date {
-   text-transform: uppercase;
-}
-
-.index {
-   font-size: 24px;
-   position: absolute;
-   right: 200px;
-}
-
-.price > h5 {
-   font-size: 55px;
-   font-weight: 500;
-}
-
-.price > h6 > span {
-   position: absolute;
-   top: 78px;
-   font-size: 13px;
-}
-
-.btn{
-   margin-top: 10px;
-   width: 150px;
-   height: 50px;
-   border-radius: 20px;
-   background-color: rgba(48, 20, 233, 0.76);
-   color: white;
-   border: 0px rgba(48, 20, 233, 0.76) solid;
+   100% {
+      transform: translateY(0px);
+      background-color: red;
+   }
 }
