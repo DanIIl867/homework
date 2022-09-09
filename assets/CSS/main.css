@@ -10,7 +10,7 @@ body>.container {
 .container>.box {
    width: 100px;
    height: 100px;
-   animation: box-animate 4s infinite;
+   animation: box-animate 6s infinite;
 }
 
 @keyframes box-animate {
