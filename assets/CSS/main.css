@@ -6,6 +6,11 @@
    text-align: center;
 }
 
+body {
+   margin: 0px;
+
+}
+
 header>.icons {
    width: 1920px;
    height: 200px;
