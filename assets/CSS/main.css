@@ -66,7 +66,7 @@ input[type="checkbox"]:checked~.navbar {
    padding-top: 80px;
 }
 
-.conteiner>.hero-section>.all>.text-block {
+.conteiner>.hero-section>.all>.content>.text-block {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -76,7 +76,7 @@ input[type="checkbox"]:checked~.navbar {
    height: 232px;
 }
 
-.conteiner>.hero-section>.all>.text-block>h1 {
+.conteiner>.hero-section>.all>.content>.text-block>h1 {
    width: 288px;
    height: 88px;
    font-family: 'Inter', sans-serif;
@@ -88,7 +88,7 @@ input[type="checkbox"]:checked~.navbar {
    color: #FFFFFF;
 }
 
-.conteiner>.hero-section>.all>.text-block>p {
+.conteiner>.hero-section>.all>.content>.text-block>p {
    width: 288px;
    height: 120px;
    font-family: 'Inter', sans-serif;
@@ -100,7 +100,7 @@ input[type="checkbox"]:checked~.navbar {
    color: #FFFFFF;
 }
 
-.conteiner>.hero-section>.all>.btn {
+.conteiner>.hero-section>.all>.content>.btn-mobail {
    height: 70px;
    width: 232px;
    left: 28px;
@@ -109,11 +109,14 @@ input[type="checkbox"]:checked~.navbar {
 }
 
 .conteiner>.header-section>.navbar>.buttons,
-.conteiner>.header-section>.navbar>.menu {
+.conteiner>.header-section>.navbar>.menu,
+.conteiner>.hero-section>.all>.content>.btn-PC {
    visibility: hidden;
+   width: 0px;
+   height: 0px;
 }
 
-.conteiner>.hero-section>.all>.btn>button {
+.conteiner>.hero-section>.all>.content>.btn-mobail>button {
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -138,9 +141,21 @@ input[type="checkbox"]:checked~.navbar {
       padding: 0;
    }
 
+   body {
+      background: #043873;
+      background-image: url(../IMG/Element\ 2.svg);
+   }
+
    .conteiner>.header-section>.navbar>.buttons,
-   .conteiner>.header-section>.navbar>.menu {
+   .conteiner>.header-section>.navbar>.menu,
+   .conteiner>.hero-section>.all>.content>.btn-PC {
       visibility: visible;
+   }
+
+   .conteiner>.hero-section>.all>.content>.btn-mobail {
+      visibility: hidden;
+      width: 0px;
+      height: 0px;
    }
 
    .conteiner>.header-section>label>.menu-span {
@@ -270,5 +285,92 @@ input[type="checkbox"]:checked~.navbar {
       line-height: 23px;
       letter-spacing: -0.02em;
       color: #FFFFFF;
+   }
+
+   .conteiner>.hero-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      isolation: isolate;
+      width: 1920px;
+      height: 829px;
+   }
+
+   .conteiner>.hero-section>.all {
+      padding-left: 220px;
+      padding-top: 140px;
+      width: 1505px;
+      height: 700px;
+   }
+
+   .conteiner>.hero-section>.all>.content {
+      height: 361px;
+      width: 656px;
+      display: contents;
+   }
+
+   .conteiner>.hero-section>.all>.content>.text-block {
+      display: block;
+      height: 250px;
+      width: 656px;
+   }
+
+   .conteiner>.hero-section>.all>.content>.text-block>h1 {
+      width: 656px;
+      height: 154px;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 77px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      text-align: left;
+   }
+
+   .conteiner>.hero-section>.all>.content>.text-block>p {
+      width: 656px;
+      height: 60px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      text-align: left;
+   }
+
+   .conteiner>.hero-section>.all>.content>.btn-PC {
+      height: 63px;
+      width: 219px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      background: #4F9CF9;
+   }
+
+   .conteiner>.hero-section>.all>.content>.btn-PC>a {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 23px;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: #FFFFFF;
+      padding-left: 20px;
+   }
+
+   .conteiner>.hero-section>.all>.hero-img {
+      height: 549px;
+      width: 824px;
+      padding: 0;
+      margin-top: -460px;
+      margin-left: 685px;
+   }
+
+   .conteiner>.hero-section>.all>.hero-img>img {
+      height: 549px;
+      width: 824px;
    }
 }
